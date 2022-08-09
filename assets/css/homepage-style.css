@@ -1,11 +1,9 @@
-@import url('./main.css');
+@import url('./reset.css');
 
 /* ==========================================
  Corpo
 ========================================== */
-body {
-  background-color: var(--primaryColor);
-}
+body { background-color: var(--primaryColor); }
 
 body::before {
   content: '';
@@ -116,13 +114,9 @@ body::before {
   transition: transform 0.3s ease-in-out;
 }
 
-.controller__button:hover {
-  transform: scale(1.1);
-}
+.controller__button:hover { transform: scale(1.1); }
 
-.controller__button:nth-child(2) {
-  margin: 0 3.75rem;
-}
+.controller__button:nth-child(2) { margin: 0 3.75rem; }
 
 .controller__line {
   background-color: white;
@@ -156,14 +150,8 @@ body#spiderman-03-hovered::before {
   background-image: url('../images/pic-sm-bg-03.jpg');
 }
 
-body[id^='spiderman-']::before {
-  opacity: 1;
-}
+body[id^='spiderman-']::before { opacity: 1; }
 
-body[id^='spiderman-'] .card:not(.card--hovered) {
-  filter: grayscale(100%);
-}
+body[id^='spiderman-'] .card:not(.card--hovered) {  filter: grayscale(100%); }
 
-.card--hovered .card__title {
-  bottom: 50%
-}
+.card--hovered .card__title { bottom: 50% }
