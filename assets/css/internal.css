@@ -1,6 +1,8 @@
 @import url('./reset.css');
 @import url('./components/_navigator.css');
 @import url('./components/_pills.css');
+@import url('./components/_link-button.css');
+@import url('./components/_gallery.css');
 
 /* ==========================================
  Body
@@ -9,6 +11,11 @@
   display: flex;
   height: 100vh;
   flex-flow: row nowrap;
+}
+
+.wrapper video {
+  position: fixed;
+  width: 100%;
 }
 
 .wrapper .left-column {
@@ -27,8 +34,8 @@
 .wrapper .main-content {
   height: 100%;
   width: 100%;
-  background-color: gray;
   padding-left: 8rem;
+  position: relative;
 }
 
 .wrapper .main-content__top {
@@ -67,3 +74,31 @@
 }
 
 .wrapper .main-content__top .description .pills { margin-bottom: 20px; }
+
+.wrapper .main-content .links {
+  padding: 20px;
+  padding-left: 0;
+}
+
+.wrapper .main-content .links ul {
+  display: flex;
+  flex-direction: row;
+}
+
+/* ==========================================
+ Fundos de tela
+========================================== */
+.spiderman-01-01 {
+  background-image: url('../images/spiderman-tobey/movie-01/background.png');
+  background-size: cover;
+}
+
+.spiderman-01-02 {
+  background-image: url('../images/spiderman-tobey/movie-02/background.png');
+  background-size: cover;
+}
+
+.spiderman-01-03 {
+  background-image: url('../images/spiderman-tobey/movie-03/background.png');
+  background-size: cover;
+}
