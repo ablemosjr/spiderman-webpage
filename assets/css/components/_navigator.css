@@ -41,13 +41,14 @@
   z-index: 0;
 }
 
-/* .navigator ul { z-index: 1; } */
 .navigator ul li a:hover,
 .navigator ul li a.active {
   color: var(--primaryColor);
   background-color: white;
   font-size: 1.2rem;
   font-weight: bold;
+  border: .18rem solid var(--primaryColor);
+  outline: .125rem solid white;
 }
 
 .navigator .navigator__icon {
